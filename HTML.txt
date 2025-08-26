@@ -1,0 +1,56 @@
+<header>
+  <h1>Roblox ROBUX Generator 💎</h1>
+  <nav>
+    <a href="#" onclick="showPage('home')">Accueil</a>
+    <a href="#" onclick="showPage('discover')">Découvrir</a>
+    <a href="#" onclick="showPage('generator')">Générateur</a>
+    <a href="#" onclick="showPage('profile')">Profil</a>
+  </nav>
+</header>
+
+<!-- Accueil -->
+<section id="home">
+  <h2>🏠 Bienvenue sur Roblox ROBUX </h2>
+  <ul id="playersList"></ul>
+</section>
+
+<!-- Découvrir -->
+<section id="discover" style="display:none;">
+  <h2>🔎 Jeux populaires</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://tr.rbxcdn.com/4f4e0a34c1483ac1c5f04963d6ac09ec/150/150/Image/Png" alt="Adopt Me!">
+      <p>Adopt Me! 🐶</p>
+      <button onclick="playGame('Adopt Me!')">Jouer</button>
+    </div>
+    <div class="card">
+      <img src="https://tr.rbxcdn.com/d96ecb1f917f9b6b1f6c0d9ec72c8b43/150/150/Image/Png" alt="Brookhaven">
+      <p>Brookhaven 🏠</p>
+      <button onclick="playGame('Brookhaven')">Jouer</button>
+    </div>
+  </div>
+</section>
+
+<!-- Générateur -->
+<section id="generator" style="display:none;">
+  <h2>💰 Générateur de Robux</h2>
+  <input type="text" id="username" placeholder="Votre pseudo"><br><br>
+  <select id="amount">
+    <option value="100">100 Robux</option>
+    <option value="500">500 Robux</option>
+    <option value="1000">1000 Robux</option>
+  </select><br><br>
+  <button onclick="generateRobux()">Générer</button>
+  <p id="result"></p>
+</section>
+
+<!-- Profil -->
+<section id="profile" style="display:none;">
+  <h2>👤 Profil</h2>
+  <p>Pseudo : <span id="profileName">Non défini</span></p>
+  <p>Robux : <span id="profileRobux">0</span></p>
+</section>
+
+<footer>
+  <p>⚠️ Site créateur (les  Robux sont vrai)</p>
+</footer>
